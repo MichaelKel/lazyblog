@@ -126,7 +126,7 @@ swiftmailer:
 #Doctrine Extensions Configuration
 stof_doctrine_extensions:
     orm:
-        default:
+        d4ej63vennnrl5:
             sluggable: true
 
 assetic:
