@@ -47,55 +47,17 @@ twig:
 # Doctrine Configuration
 doctrine:
     dbal:
-        driver:   pdo_pgsql
-        host:     "%database_host%"
-        port:     "%database_port%"
-        dbname:   "%database_name%"
-        user:     "%database_user%"
-        password: "%database_password%"
-        charset:  UTF8
-#        default_connection:   lazyblog
-#        connections:
-#            lazyblog:
-#                driver:   pdo_mysql
-#                name:     %database_name%
-#                user:     %database_user%
-#                host:     %database_host%
-#                password: %database_password%
-#                charset:  UTF8
+        default_connection:   d4ej63vennnrl5
+        connections:
+            d4ej63vennnrl5:
+                driver:   pdo_pgsql
+                host:     "%database_host%"
+                port:     "%database_port%"
+                dbname:   "%database_name%"
+                user:     "%database_user%"
+                password: "%database_password%"
+                charset:  UTF8
 
-#        driver:   pdo_pgsql
-#        host:     ec2-54-221-226-148.compute-1.amazonaws.com
-#        port:     5432
-#        dbname:   d4id4s69ben0tr
-#        user:     tosfdmvbmuojae
-#        password: nSeD1TLySdTMdbSP__GKtiX0oS
-#        charset:  UTF8
-
-#        driver:   'pdo_pgsql'
-#        host:     "%psql_database_host%"
-#        port:     "%psql_database_port%"
-#        dbname:   "%psql_database_name%"
-#        user:     "%psql_database_user%"
-#        password: "%psql_database_password%"
-#        charset:  UTF8
-
-#        driver:   %database_driver%
-#        host:     "%database_host%"
-#        port:     "%database_port%"
-#        dbname:   "%database_name%"
-#        user:     "%database_user%"
-#        password: "%database_password%"
-#        charset:  UTF8
-
-
-                #driver:   pdo_mysql for me db
-#                host:     "%database_host%"
-#                port:     "%database_port%"
-#                dbname:   "%database_name%"
-#                user:     "%database_user%"
-#                password: "%database_password%"
-#                charset:  UTF8
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
         #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
@@ -126,7 +88,7 @@ swiftmailer:
 #Doctrine Extensions Configuration
 stof_doctrine_extensions:
     orm:
-        d4ej63vennnrl5:
+        default: ~
             sluggable: true
 
 assetic:
