@@ -47,14 +47,19 @@ twig:
 # Doctrine Configuration
 doctrine:
     dbal:
-        default:
-            driver:   pdo_pgsql
-            host:     "%database_host%"
-            port:     "%database_port%"
-            dbname:   "%database_name%"
-            user:     "%database_user%"
-            password: "%database_password%"
-            charset:  UTF8
+        driver:   pdo_mysql
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+
+#            database_host: ec2-50-19-239-232.compute-1.amazonaws.com
+#                database_port: 5432
+#                database_name: d4ej63vennnrl5
+#                database_user: iddbregxlmdynd
+#                database_password: 19GmpeOD-v9s44Tgirl0vPt0DG
 
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
@@ -86,7 +91,7 @@ swiftmailer:
 #Doctrine Extensions Configuration
 stof_doctrine_extensions:
     orm:
-        default: ~
+        default:
             sluggable: true
 
 assetic:

@@ -50,7 +50,7 @@ Symfony already includes an AppBundle that you may use to start developing your 
 you need to split the application into reusable components, you can create your own bundles.');
         $post1->setUser($this->getUser($manager, 'Дмитрий'));
         $post1->setCreatedAt(new \DateTime('now'));
-        $post1->setTags('php, symfony3 ');
+        $post1->setTags('agile, cakephp');
         $post1->setCategories($this->getReference('cat1'));
 
 
@@ -67,7 +67,7 @@ by Composer. This directory already contains the Symfony libraries, the SwiftMai
 ORM, the Twig templating system and some other third party libraries and bundles.');
         $post2->setUser($this->getUser($manager, 'Анатолий'));
         $post2->setCreatedAt(new \DateTime('now'));
-        $post2->setTags('php, symfony3 ');
+        $post2->setTags('scrum, deploy');
         $post2->setCategories($this->getReference('cat2'));
 
 
@@ -86,7 +86,7 @@ system. In fact, the application configuration is only parsed for the very first
 down to plain PHP code stored in the app/cache/ directory.');
         $post3->setUser($this->getUser($manager, 'Михаил'));
         $post3->setCreatedAt(new \DateTime('now'));
-        $post3->setTags('php, symfony3 ');
+        $post3->setTags('c++, symfony3 ');
         $post3->setCategories($this->getReference('cat3'));
 
 
@@ -102,7 +102,7 @@ system. In fact, the application configuration is only parsed for the very first
 down to plain PHP code stored in the app/cache/ directory.');
         $post4->setUser($this->getUser($manager, 'Анатолий'));
         $post4->setCreatedAt(new \DateTime('now'));
-        $post4->setTags('php, symfony3 ');
+        $post4->setTags('java, applets');
         $post4->setCategories($this->getReference('cat4'));
 
 
@@ -128,7 +128,7 @@ Symfony already includes an AppBundle that you may use to start developing your 
 you need to split the application into reusable components, you can create your own bundles.');
         $post5->setUser($this->getUser($manager, 'Дмитрий'));
         $post5->setCreatedAt(new \DateTime('now'));
-        $post5->setTags('php, symfony3 ');
+        $post5->setTags('python, threats');
         $post5->setCategories($this->getReference('cat5'));
 
 
